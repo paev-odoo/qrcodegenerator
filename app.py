@@ -5,7 +5,7 @@ import qrcode
 url = input("Enter the link: ")
 filename = input("Enter the file name: ")
 
-# Automatically detects system language & custom download paths
+# this is used to locate the downloads folder regardless of language
 save_path = Path(user_downloads_dir()) / f"{filename}.png"
 
 img = qrcode.make(url)
